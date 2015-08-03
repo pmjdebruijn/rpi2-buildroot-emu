@@ -14,12 +14,12 @@ RPI_FIRMWARE_INSTALL_IMAGES = YES
 RPI_FIRMWARE_DEPENDENCIES += host-rpi-firmware
 
 define RPI_FIRMWARE_INSTALL_DTB
-	$(INSTALL) -D -m 0644 $(@D)/boot/bcm2708-rpi-b.dtb $(BINARIES_DIR)/bcm2708-rpi-b.dtb
-	$(INSTALL) -D -m 0644 $(@D)/boot/bcm2708-rpi-b-plus.dtb $(BINARIES_DIR)/bcm2708-rpi-b-plus.dtb
+#	$(INSTALL) -D -m 0644 $(@D)/boot/bcm2708-rpi-b.dtb $(BINARIES_DIR)/bcm2708-rpi-b.dtb
+#	$(INSTALL) -D -m 0644 $(@D)/boot/bcm2708-rpi-b-plus.dtb $(BINARIES_DIR)/bcm2708-rpi-b-plus.dtb
 	$(INSTALL) -D -m 0644 $(@D)/boot/bcm2709-rpi-2-b.dtb $(BINARIES_DIR)/bcm2709-rpi-2-b.dtb
-	for ovldtb in  $(@D)/boot/overlays/*.dtb; do \
-		$(INSTALL) -D -m 0644 $${ovldtb} $(BINARIES_DIR)/overlays/$${ovldtb##*/} || exit 1; \
-	done
+#	for ovldtb in  $(@D)/boot/overlays/*.dtb; do \
+#		$(INSTALL) -D -m 0644 $${ovldtb} $(BINARIES_DIR)/overlays/$${ovldtb##*/} || exit 1; \
+#	done
 endef
 
 define RPI_FIRMWARE_INSTALL_IMAGES_CMDS
