@@ -208,6 +208,11 @@ menu "Games"
 	source "package/prboom/Config.in"
 	source "package/rubix/Config.in"
 	source "package/sl/Config.in"
+	source "package/retroarch/Config.in"
+	if BR2_PACKAGE_RETROARCH
+		menu "libretro cores"
+		endmenu
+	endif
 endmenu
 
 menu "Graphic libraries and applications (graphic/text)"
