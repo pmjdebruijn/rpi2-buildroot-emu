@@ -1,0 +1,1 @@
+export SDL_NOMOUSE=1

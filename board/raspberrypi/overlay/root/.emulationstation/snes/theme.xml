@@ -1,0 +1,39 @@
+<basicTheme>
+    <listPrimaryColor>FFFFFF</listPrimaryColor>
+    <listSelectorColor>000000</listSelectorColor>
+    <fastSelectColor>000000</fastSelectColor>
+
+    <hideHeader/>
+    <hideDividers/>
+
+    <listFont>
+        <path>./../fonts/Gobold.ttf</path>
+        <size>0.06</size>
+    </listFont>
+
+    <descriptionFont>
+        <path>./../fonts/Gobold.ttf</path>
+        <size>0.03</size>
+    </descriptionFont>
+
+    <fastSelectFont>
+        <path>./../fonts/Gobold.ttf</path>
+        <size>0.06</size>
+    </fastSelectFont>
+
+    <component>
+        <type>image</type>
+        <path>./snes_art/snes_bg.png</path>
+        <pos>0 0</pos>
+        <dim>1 1</dim>
+    </component>
+
+    <component>
+	<type>image</type>
+	<path>./snes_art/snes_logo.png</path>
+	<pos>0.5 0</pos>
+	<dim>1 0</dim>
+	<origin>0.5 0</origin>
+    </component>
+
+</basicTheme>
