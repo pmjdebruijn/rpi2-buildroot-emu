@@ -1,0 +1,26 @@
+From b6685bf806b1cf58f194d56261b29db0f235d33b Mon Sep 17 00:00:00 2001
+From: Matt Johnston <matt@ucc.asn.au>
+Date: Wed, 4 Feb 2015 22:12:06 +0800
+Subject: [PATCH] twofish ctr modes
+
+---
+ common-algo.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/common-algo.c b/common-algo.c
+index 9abc330..6a20282 100644
+--- a/common-algo.c
++++ b/common-algo.c
+@@ -144,6 +144,12 @@ algo_type sshciphers[] = {
+ #ifdef DROPBEAR_AES256
+ 	{"aes256-ctr", 0, &dropbear_aes256, 1, &dropbear_mode_ctr},
+ #endif
++#ifdef DROPBEAR_TWOFISH256
++	{"twofish256-ctr", 0, &dropbear_twofish256, 1, &dropbear_mode_ctr},
++#endif
++#ifdef DROPBEAR_TWOFISH128
++	{"twofish128-ctr", 0, &dropbear_twofish128, 1, &dropbear_mode_ctr},
++#endif
+ #endif /* DROPBEAR_ENABLE_CTR_MODE */
+ 
+ #ifdef DROPBEAR_ENABLE_CBC_MODE
