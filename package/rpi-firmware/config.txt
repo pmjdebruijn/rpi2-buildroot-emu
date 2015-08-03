@@ -4,4 +4,11 @@ initramfs rootfs.cpio.gz
 
 disable_overscan=1
 
+overscan_top=18
+overscan_left=32
+overscan_right=32
+overscan_bottom=18
+
+overscan_scale=1
+
 gpu_mem=256
