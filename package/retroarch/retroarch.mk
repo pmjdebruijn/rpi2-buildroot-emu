@@ -107,6 +107,7 @@ endef
 
 define RETROARCH_INSTALL_TARGET_CMDS
 	$(MAKE) -C $(@D) DESTDIR=$(TARGET_DIR) install
+	rm -f $(TARGET_DIR)/usr/bin/retroarch-cg2glsl
 endef
 
 $(eval $(generic-package))
