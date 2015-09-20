@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# conf
+#
+
+case "$1" in
+  start)
+	echo -n "Loading configuration: "
+
+        if [ -f /mnt/conf/es_input.cfg ]; then
+          echo -n "es_input "
+          cp -a /mnt/conf/es_input.cfg /root/.emulationstation/es_input.cfg
+        fi
+
+        if [ -f /mnt/conf/retroarch.cfg ]; then
+          echo -n "retroarch "
+          cp -a /mnt/conf/retroarch.cfg /root/.config/retroarch/retroarch.cfg
+        fi
+
+	echo "OK"
+	;;
+  stop)
+	;;
+  restart|reload)
+	;;
+  *)
+	echo "Usage: $0 {start}"
+	exit 1
+esac
+
+exit $?
