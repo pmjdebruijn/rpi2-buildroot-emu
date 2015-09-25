@@ -54,3 +54,19 @@ diff -Nurpd a/src/Font.cpp b/src/Font.cpp
  		"font.ttf" };
  #endif
  
+diff -Nurpd a/src/SystemData.cpp b/src/SystemData.cpp
+--- a/src/SystemData.cpp	2013-12-15 01:52:12.000000000 +0100
++++ b/src/SystemData.cpp	2015-09-23 19:23:10.411258883 +0200
+@@ -82,9 +82,9 @@ void SystemData::launchGame(Window* wind
+ 	command = strreplace(command, "%ROM_RAW%", game->getPath());
+ 
+ 	LOG(LogInfo) << "	" << command;
+-	std::cout << "==============================================\n";
++	//std::cout << "==============================================\n";
+ 	int exitCode = system(command.c_str());
+-	std::cout << "==============================================\n";
++	//std::cout << "==============================================\n";
+ 
+ 	if(exitCode != 0)
+ 	{
+
