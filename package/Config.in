@@ -213,6 +213,7 @@ menu "Games"
 	if BR2_PACKAGE_RETROARCH
 		menu "libretro cores"
 			source "package/catsfc/Config.in"
+			source "package/catsfc_plus/Config.in"
 		endmenu
 	endif
 endmenu
