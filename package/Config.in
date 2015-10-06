@@ -214,6 +214,7 @@ menu "Games"
 		menu "libretro cores"
 			source "package/catsfc/Config.in"
 			source "package/catsfc_plus/Config.in"
+			source "package/snes9x-next/Config.in"
 		endmenu
 	endif
 endmenu
