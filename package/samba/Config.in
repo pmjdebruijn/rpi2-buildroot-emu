@@ -1,6 +1,5 @@
 config BR2_PACKAGE_SAMBA
 	bool "samba"
-	depends on BR2_DEPRECATED_SINCE_2015_05
 	depends on BR2_TOOLCHAIN_HAS_THREADS
 	depends on BR2_USE_MMU # fork()
 	depends on !BR2_nios2 # binary too large, relocations don't fit
