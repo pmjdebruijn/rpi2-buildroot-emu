@@ -215,6 +215,7 @@ menu "Games"
 			source "package/catsfc/Config.in"
 			source "package/catsfc_plus/Config.in"
 			source "package/snes9x-next/Config.in"
+			source "package/fceumm/Config.in"
 		endmenu
 	endif
 endmenu
